@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+
+}
+/* IMAGE TEXTE RECRUTEMENT */
+h2,h3,h4{
+    color: #f4c974;
+}
+
+h1{
+    border-bottom: solid 1px white;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    text-align: center;
+    color: white;
+    filter: brightness(150%);
+}
+
+header{
+    width: 100vw;
+}
+
+.head_img>img{
+    display: flex;
+    width: 100%;
+    height: max-content;
+    object-fit: cover;
+    justify-items: center;
+    font-weight: bold;
+}
+
+.head_text{
+    display: flex;
+    text-align: center;
+    width: 100%;
+    flex-direction: column;
+    background: url('fond1intro.jpg') no-repeat center;
+    background-size: 100%;
+    height: 50vh;
+    justify-content: center;
+    color: white;
+    filter: brightness(50%);
+}
+
+.head_text>p{
+    width: 50%;
+    align-self: center;
+}
+
+/* CONTENUE PRINCIPARLE, RESEAU SOCIAUX */
+
+.main-part{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+.offre{
+    width: 4fr;
+}
+
+.soc-media{
+    width: 1fr;
+}
+

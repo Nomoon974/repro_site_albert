@@ -5,40 +5,84 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href=""
+    <link rel="stylesheet" href="fontawesome-free-5.15.4-web/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
     <header>
-        <div>
-            <div>Liste des offres > Détail d'une offre</div>
-            <div>
-                <h2>Recrutement</h2>
+        <div class="head_img">
+            <div><i class="fas fa-home"></i> Liste des offres > Détail d'une offre</div>
+            <div class="head_text">
+                <h1>Recrutement</h1>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum facere commodi ratione. Non aliquid delectus hic pariatur, similique voluptatibus sint nemo repellendus reiciendis adipisci enim voluptatem nihil, possimus eos Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi, saepe quos natus a neque magni veniam blanditiis quia. Assumenda possimus facere ut nisi aspernatur saepe impedit ab aperiam aut cumque. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum aliquam temporibus nisi provident corporis adipisci illum porro perferendis, assumenda consequatur vitae voluptates nam aperiam harum esse ducimus tempore neque deserunt.</p>
             </div>
         </div>
     </header>
-    <main>
-        <div>
-            <h2>Service civil</h3>
+    <main class="main-part">
+        <div class="offre">
+            <div>
+                <h2>Service civil</h3>
+            </div>
+            <div>
+                <h3><i class="far fa-gem"></i> votre mission</h3>
+            </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis cum magni, illum facere similique quaerat ipsa perferendis ipsam omnis architecto aperiam, enim quo harum. Quae nisi inventore et repudiandae distinctio?</p>
+            <div><h3><i class="fas fa-cogs"></i> nous demandons</h3></div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis dignissimos consequatur inventore sint! Maiores animi ipsam natus rerum et, labore molestias officia quam sunt mollitia aut quidem explicabo recusandae dicta.</p>
+            <div><h3><i class="fas fa-cogs"></i> Nous offrons</h3></div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, pariatur !</p>
+            <div><h3><i class="fas fa-percent"></i> Taux d'activité</h3></div>
+                <p>100 %</p>
+            <div><h3><i class="fas fa-calendar-alt"></i> date d'entrée enfonction</h3></div>
+                <p>à convenir</p>
+            <div><h3><i class="fas fa-cogs"></i> renseignements</h3></div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius consequatur laborum impedit, odio autem sint placeat laboriosam officia ea architecto, temporibus iusto a magnam corrupti commodi animi dolorum harum voluptatem?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quisquam commodi, reiciendis esse blanditiis cum voluptates voluptatem ducimus rem quasi, est quo perferendis itaque sit voluptatum incidunt, vero autem accusantium.
+                </p>
         </div>
         <div>
-            <h3>votre mission</h3>
+            <div class="soc-media">
+                <button>Linkedin</button>
+                <button>facebook</button>
+                <h4>Postuler</h4>
+                <button>Je postule</button>
+            </div>
         </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis cum magni, illum facere similique quaerat ipsa perferendis ipsam omnis architecto aperiam, enim quo harum. Quae nisi inventore et repudiandae distinctio?</p>
-        <div><h3>nous demandons</h3></div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis dignissimos consequatur inventore sint! Maiores animi ipsam natus rerum et, labore molestias officia quam sunt mollitia aut quidem explicabo recusandae dicta.</p>
-        <div><h3>Nous offrons</h3></div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, pariatur !</p>
-        <div><h3>Taux d'activité</h3></div>
-            <p>100 %</p>
-        <div><h3>date d'entrée enfonction</h3></div>
-            <p>à convenir</p>
-        <div><h3>renseignements</h3></div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius consequatur laborum impedit, odio autem sint placeat laboriosam officia ea architecto, temporibus iusto a magnam corrupti commodi animi dolorum harum voluptatem?
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quisquam commodi, reiciendis esse blanditiis cum voluptates voluptatem ducimus rem quasi, est quo perferendis itaque sit voluptatum incidunt, vero autem accusantium.
-            </p>
     </main>
+    <section>
+        <form>
+            <h3>Je postule</h3>
+            * Champs obligatoire
+            <div><label>Nom(*)</label></div>
+            <input type="text" name="nom" id="nom">
+            <div><label>Prénom(*)</label></div>
+            <input type="text" name="prenom" id="prenom">
+            <div><label>Civilité(*)</label></div>
+            <select name="genre" id="genre">
+                <option value="Homme">Homme</option>
+                <option value="Femme">Femme</option>
+                <option value="Inconnu">Inconnu</option>
+            </select>
+            <input type="email" name="mail" id="mail">
+            Taille maxi fichier 2Mo et fichiers acceptés .doc/.docx/.PDF
+            <div><label>CV(*)</label></div>
+            <input type="file" name="fichier" id="fichier">
+            <div><label>Lettre de motivation(*)</label></div>
+            <input type="file" name="fichier" id="fichier2">
+            <div><label>Document 1</label></div>
+            <input type="file" name="fichier" id="fichier3">
+            <div><label>Document 2</label></div>
+            <input type="file" name="fichier" id="fichier4">
+            <input type="radio" name="coche" id="coche">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat qui similique quam tenetur expedita, voluptates earum vel magnam perspiciatis doloremque dolorem quos quasi quas recusandae optio? Rerum numquam tempora officiis.
+            <label>CAPTCHA(*)</label>
+            <div><i class="fas fa-sync-alt"></i>reload <input type="text" name="captcha" id="captcha"></div>
+            <input type="button" value="Envoyer">
+        </form>
+    </section>
 
 
     
