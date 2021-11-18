@@ -204,6 +204,12 @@ a{
     background-color: #e1e1e1;
 }
 
+.btn-social{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 /* FORMULAIRE */
 
 .formulaire{
